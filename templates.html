@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Plantillas</title>
+<!--[if lt IE 9]>
+  <script src="./assets/javascripts/html5.js"></script>
+<![endif]-->
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+  <link rel="stylesheet" href="http://twittard.piradoiv.com/stylesheets/unsemantic-grid-responsive.css" />
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="http://twittard.piradoiv.com/stylesheets/ie.css" />
+<![endif]-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://twittard.piradoiv.com/codemirror/codemirror.js"></script>
+  <link rel="stylesheet" href="http://twittard.piradoiv.com/codemirror/codemirror.css">
+    <link rel="stylesheet" id="editor-theme-css" href="http://twittard.piradoiv.com/codemirror/theme/eclipse.css">
+    <script src="http://twittard.piradoiv.com/codemirror/mode/css/css.js"></script>
+</head>
+<body>
+
+    <div class="header">
+    <div class="grid-container">
+      <div class="grid-100">
+        <ul>
+          <li>
+            <a href="index.html" id="header-home">Inicio</a>          </li>
+          <li>
+            <a href="http://twittard.piradoiv.com/@itnas" id="header-profile">Perfil</a>          </li>
+          <li>
+            <a href="http://twittard.piradoiv.com/settings" id="header-settings">Configuración</a>          </li>
+          <li>
+            <a href="templates.html" id="header-templates" class="active-link">Plantillas</a>          </li>
+          <li>
+            <a href="http://twittard.piradoiv.com/logout" id="header-logout">Desconectar</a>          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="grid-container">
+  <div class="grid-25">
+      <div class="sidebar">
+    <div class="userbox">
+      <div class="name">
+        <a href="http://twittard.piradoiv.com/@itnas">
+          <div class="grid-15 mobile-grid-15">
+            <img src="http://www.gravatar.com/avatar/ce28a2877e6e4ff4eb519d5df78fe8b0?s=32&d=retro" alt="" class="avatar-image" />          </div>
+          <div class="grid-85 mobile-grid-85">
+              santi<br />
+              <span>Ver mi página de perfil</span>
+          </div>
+          <div class="clearfix"></div>
+        </a>
+      </div>
+      <div class="counters">
+        <div class="grid-33 mobile-grid-33">
+          <div class="number">
+            1          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@itnas">Tweets</a>
+          </div>
+        </div>
+        <div class="grid-33 mobile-grid-33">
+          <div class="number">
+            1          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@itnas/mentions">Menciones</a>
+          </div>
+        </div>
+        <div class="grid-33 mobile-grid-33">
+          <div class="number">
+            6          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@itnas/followers">Seguidores</a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <form action="http://twittard.piradoiv.com/tweets/submit" method="post" accept-charset="utf-8" class="new-tweet"><div style="display:none">
+<input type="hidden" name="csrf_test_name" value="1d9ee3abb530d5bf4bb1c29e23a55f89" />
+</div>      <textarea name="tweet" maxlength="140" placeholder="Publicar un nuevo tweet"></textarea>
+      <input class="button" type="submit" value="Publicar" />
+    </form>
+
+        <div class="recommended-follows">
+      <h4 class="title">
+        Te recomendamos seguir a...
+      </h4>
+      <div class="users">
+              <a href="http://twittard.piradoiv.com/@scumah"><img src="http://www.gravatar.com/avatar/d3bfe12725b2926c4f23eee48aa31b2d?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@Preguntitas"><img src="http://www.gravatar.com/avatar/fc731405752ae60f877645cba2b54ba8?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@autlos"><img src="http://www.gravatar.com/avatar/4319b69e427e132fb4b96ef05a37f343?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@babri"><img src="http://www.gravatar.com/avatar/1501f10a17bdc4a3e100fd1277e7ce72?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@troll"><img src="http://www.gravatar.com/avatar/04defc06cabb12bfac713662bf2a3ca3?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@txepox1"><img src="http://www.gravatar.com/avatar/5fa24f1a908a26f6ceea5a8eb502ac66?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@NickNack"><img src="http://www.gravatar.com/avatar/9593eb4ef99340905f87a37ef378c8e7?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@pepe"><img src="http://www.gravatar.com/avatar/dc7690db98acce4a1eacffcbb1559f63?s=32&d=retro" alt="" class="avatar-image" /></a>
+            </div>
+    </div>
+      </div>
+
+  </div>
+  <div class="grid-75 big-section">
+    <h2>Plantillas disponibles</h2>
+    <a href="http://twittard.piradoiv.com/templates/add">Crear una plantilla</a>
+    <ul>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">nucelar</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@Nucklear">@Nucklear</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/17">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            13 Instalaciones
+          </div>
+          <div class="grid-50">
+            336 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Basic</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@piradoiv">@piradoiv</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/1">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            7 Instalaciones
+          </div>
+          <div class="grid-50">
+            276 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">1</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@1">@1</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/14">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            6 Instalaciones
+          </div>
+          <div class="grid-50">
+            619 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">alterego</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@alterego">@alterego</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/8">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            6 Instalaciones
+          </div>
+          <div class="grid-50">
+            567 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Rettiwit</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@Bayer">@Bayer</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/16">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            4 Instalaciones
+          </div>
+          <div class="grid-50">
+            750 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">asdf</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@1">@1</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/15">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            3 Instalaciones
+          </div>
+          <div class="grid-50">
+            298 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">BuhoStyle</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@buho99">@buho99</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/12">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            3 Instalaciones
+          </div>
+          <div class="grid-50">
+            213 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Cabron con pintas</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@Miguel">@Miguel</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/40">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            3 Instalaciones
+          </div>
+          <div class="grid-50">
+            89 Lineas de código
+          </div>
+        </div>
+      </div>
+                            <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">kraneok</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@Antonio">@Antonio</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/42">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            2 Instalaciones
+          </div>
+          <div class="grid-50">
+            366 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">olakplantillea</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@CodE07">@CodE07</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/2">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            2 Instalaciones
+          </div>
+          <div class="grid-50">
+            368 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Pikaaaaaa</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@MegalomaniaC">@MegalomaniaC</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/23">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            2 Instalaciones
+          </div>
+          <div class="grid-50">
+            147 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">sh31k</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@sh31k">@sh31k</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/30">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            2 Instalaciones
+          </div>
+          <div class="grid-50">
+            291 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">topota</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@R1kz">@R1kz</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/13">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            2 Instalaciones
+          </div>
+          <div class="grid-50">
+            116 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">troll</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@troll">@troll</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/54">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            2 Instalaciones
+          </div>
+          <div class="grid-50">
+            191 Lineas de código
+          </div>
+        </div>
+      </div>
+                      <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">8===D</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@PoLLeZnO">@PoLLeZnO</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/24">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            38 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">AikonCWD</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@aikoncwd">@aikoncwd</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/48">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            193 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">bestcsseu</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@lecherito">@lecherito</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/11">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            19 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Beta</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@kaiserlau">@kaiserlau</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/6">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            67 Lineas de código
+          </div>
+        </div>
+      </div>
+                      <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Luthorrrrrr</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@luthor">@luthor</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/26">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            334 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">miSko</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@misko">@misko</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/21">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            169 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">MisterPulpo</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@MisterPulpo">@MisterPulpo</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/22">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            74 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">R2D2</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@nxs">@nxs</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/53">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            73 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">tedoymisdies</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@blero">@blero</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/29">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            143 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">test</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@korganzz">@korganzz</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/5">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            6 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Tuiter</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@dani10">@dani10</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/38">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            21 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Twittard v2.0</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@Jastro">@Jastro</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/3">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            82 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">zasca</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@lebron">@lebron</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/49">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            1 Instalaciones
+          </div>
+          <div class="grid-50">
+            31 Lineas de código
+          </div>
+        </div>
+      </div>
+                <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Sin título</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@moco">@moco</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/7">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            0 Instalaciones
+          </div>
+          <div class="grid-50">
+            69 Lineas de código
+          </div>
+        </div>
+      </div>
+                      <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">dev</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@migue">@migue</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/4">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            0 Instalaciones
+          </div>
+          <div class="grid-50">
+            2 Lineas de código
+          </div>
+        </div>
+      </div>
+                                  <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">itnas</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@itnas">@itnas</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/19">Usar esta plantilla</a>
+                      <a href="http://twittard.piradoiv.com/templates/edit/19">Editar</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            0 Instalaciones
+          </div>
+          <div class="grid-50">
+            0 Lineas de código
+          </div>
+        </div>
+      </div>
+                                              <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">p</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@PoLLeZnO">@PoLLeZnO</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/36">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            0 Instalaciones
+          </div>
+          <div class="grid-50">
+            4 Lineas de código
+          </div>
+        </div>
+      </div>
+                                              <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Sosa</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@Sosa">@Sosa</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/47">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            0 Instalaciones
+          </div>
+          <div class="grid-50">
+            2 Lineas de código
+          </div>
+        </div>
+      </div>
+                                  <div class="template-holder grid-33">
+        <div class="template">
+          <h3 class="template-name">Twitwho</h3>
+          <div class="template-author">por <a href="http://twittard.piradoiv.com/@Hopper">@Hopper</a></div>
+        </div>
+        <div class="template-actions">
+          <a href="http://twittard.piradoiv.com/templates/select/51">Usar esta plantilla</a>
+                  </div>
+        <div class="template-stats">
+          <div class="grid-50">
+            0 Instalaciones
+          </div>
+          <div class="grid-50">
+            41 Lineas de código
+          </div>
+        </div>
+      </div>
+              </ul>
+  </div>
+</div>
+
+
+  <script>
+    var baseUrl = 'http://twittard.piradoiv.com/';
+        var preferredEditorTheme = 'eclipse';
+      </script>
+  <script src="http://twittard.piradoiv.com/javascripts/jquery.js"></script>
+  <script src="http://twittard.piradoiv.com/javascripts/app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>piradoiv</title>
+<!--[if lt IE 9]>
+  <script src="./assets/javascripts/html5.js"></script>
+<![endif]-->
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+  <link rel="stylesheet" href="http://twittard.piradoiv.com/stylesheets/unsemantic-grid-responsive.css" />
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="http://twittard.piradoiv.com/stylesheets/ie.css" />
+<![endif]-->
+    <script src="http://twittard.piradoiv.com/codemirror/codemirror.js"></script>
+  <link rel="stylesheet" href="http://twittard.piradoiv.com/codemirror/codemirror.css">
+  <link rel="stylesheet" href="http://twittard.piradoiv.com/codemirror/theme/eclipse.css">
+    <link rel="stylesheet" href="style.css" />
+  <script src="http://twittard.piradoiv.com/codemirror/mode/css/css.js"></script>
+</head>
+<body>
+
+    <div class="header">
+    <div class="grid-container">
+      <div class="grid-100">
+        <ul>
+          <li>
+            <a href="index.html" id="header-home">Inicio</a>          </li>
+          <li>
+            <a href="http://twittard.piradoiv.com/@itnas" id="header-profile">Perfil</a>          </li>
+          <li>
+            <a href="http://twittard.piradoiv.com/settings" id="header-settings">Configuración</a>          </li>
+          <li>
+            <a href="templates.html" id="header-templates" class="active-link">Plantillas</a>          </li>
+          <li>
+            <a href="http://twittard.piradoiv.com/logout" id="header-logout">Desconectar</a>          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="grid-container">
+  <div class="grid-25">
+      <div class="sidebar">
+    <div class="userbox">
+      <div class="name">
+        <a href="http://twittard.piradoiv.com/@itnas">
+          <div class="grid-15 mobile-grid-15">
+            <img src="http://www.gravatar.com/avatar/ce28a2877e6e4ff4eb519d5df78fe8b0?s=32&d=retro" alt="" class="avatar-image" />          </div>
+          <div class="grid-85 mobile-grid-85">
+              santi<br />
+              <span>Ver mi página de perfil</span>
+          </div>
+          <div class="clearfix"></div>
+        </a>
+      </div>
+      <div class="counters">
+        <div class="grid-33 mobile-grid-33">
+          <div class="number">
+            1          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@itnas">Tweets</a>
+          </div>
+        </div>
+        <div class="grid-33 mobile-grid-33">
+          <div class="number">
+            1          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@itnas/mentions">Menciones</a>
+          </div>
+        </div>
+        <div class="grid-33 mobile-grid-33">
+          <div class="number">
+            6          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@itnas/followers">Seguidores</a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <form action="http://twittard.piradoiv.com/tweets/submit" method="post" accept-charset="utf-8" class="new-tweet"><div style="display:none">
+<input type="hidden" name="csrf_test_name" value="1d9ee3abb530d5bf4bb1c29e23a55f89" />
+</div>      <textarea name="tweet" maxlength="140" placeholder="Publicar un nuevo tweet"></textarea>
+      <input class="button" type="submit" value="Publicar" />
+    </form>
+
+        <div class="recommended-follows">
+      <h4 class="title">
+        Te recomendamos seguir a...
+      </h4>
+      <div class="users">
+              <a href="http://twittard.piradoiv.com/@scumah"><img src="http://www.gravatar.com/avatar/d3bfe12725b2926c4f23eee48aa31b2d?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@txepox1"><img src="http://www.gravatar.com/avatar/5fa24f1a908a26f6ceea5a8eb502ac66?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@hda"><img src="http://www.gravatar.com/avatar/5434a3afaffc5da2774872a4f44fffab?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@dvp"><img src="http://www.gravatar.com/avatar/c579757bcbd1b2829f7349856f12d7a8?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@Preguntitas"><img src="http://www.gravatar.com/avatar/fc731405752ae60f877645cba2b54ba8?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@Vincen"><img src="http://www.gravatar.com/avatar/eb5f3181dba38cedd92ca7ae2ba20b13?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@john"><img src="http://www.gravatar.com/avatar/d31075d1a7e79e7cf3e2825899ece470?s=32&d=retro" alt="" class="avatar-image" /></a>
+              <a href="http://twittard.piradoiv.com/@troll"><img src="http://www.gravatar.com/avatar/04defc06cabb12bfac713662bf2a3ca3?s=32&d=retro" alt="" class="avatar-image" /></a>
+            </div>
+    </div>
+      </div>
+
+  </div>
+  <div class="grid-75 big-section">
+    <div class="profile">
+      <div class="avatar">
+        <img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=80&d=retro" alt="" class="avatar-image" />      </div>
+      <h1>Ricardo Cruz</h1>
+      <h2>@piradoiv</h2>
+      <p>Me interesa el desarrollo de aplicaciones web, el café, el color, las magdalenas y el buceo.</p>
+            <p>
+        Tenerife, España &bull;
+        <a href="http://www.piradoiv.com/" target="_blank" rel="nofollow">
+          http://www.piradoiv.com/        </a>
+      </p>
+      
+      <div class="counters">
+        <div class="grid-20 mobile-grid-50">
+          <div class="number">
+            61          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@piradoiv">Tweets</a>
+          </div>
+        </div>
+        <div class="grid-20 mobile-grid-50">
+          <div class="number">
+            26          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@piradoiv/mentions">Menciones</a>
+          </div>
+        </div>
+        <div class="grid-20 mobile-grid-50">
+          <div class="number">
+            77          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@piradoiv/following">Siguiendo</a>
+          </div>
+        </div>
+        <div class="grid-20 mobile-grid-50">
+          <div class="number">
+            19          </div>
+          <div class="description">
+            <a href="http://twittard.piradoiv.com/@piradoiv/followers">Seguidores</a>
+          </div>
+        </div>
+                <div class="grid-20 mobile-grid-50 follow-button">
+          <form action="http://twittard.piradoiv.com/follows" method="post" accept-charset="utf-8"><div style="display:none">
+<input type="hidden" name="csrf_test_name" value="1d9ee3abb530d5bf4bb1c29e23a55f89" />
+</div>
+<input type="hidden" name="username" value="piradoiv" />
+
+<input type="hidden" name="action" value="unfollow" />
+<input type="submit" name="" value="Unfollow" class="button follow-button unfollow"  /></form>        </div>
+                <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="tweets">
+  <h3>Tweets</h3>
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/199">11m</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            <a href="/@Bayer" class="user-permalink">@Bayer</a>, ya tienes tu <a href="http://twittard.piradoiv.com/t/codemirror" class="tag-permalink">#CodeMirror</a> ;)          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/197">2h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            Ke asen!, añadí ids para los elementos del header, .active-link si es la url actual y .button para todos los botones :P <a href="http://twittard.piradoiv.com/t/updates" class="tag-permalink">#Updates</a> <a href="http://twittard.piradoiv.com/t/twittard" class="tag-permalink">#Twittard</a>          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/193">2h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            RE <a href="/@luthor" class="user-permalink">@luthor</a> da un error 404 esa URL :(          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/192">2h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            <a href="http://twittard.piradoiv.com/t/welcome" class="tag-permalink">#Welcome</a> <a href="/@Vincen" class="user-permalink">@Vincen</a> xD ghoispghadgh          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/190">2h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            RE <a href="/@Antonio" class="user-permalink">@Antonio</a> registra tu email en <a href="http://gravatar.com/" target="_blank" >http://gravatar.com/</a>          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/186">2h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            RE <a href="/@Antonio" class="user-permalink">@Antonio</a> algo habrá que hacer, ¿no? :P          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/184">3h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            <a href="/@nxs" class="user-permalink">@nxs</a> Intredasting el header que has hecho :)          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/183">3h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            <a href="/@Nucklear" class="user-permalink">@Nucklear</a>, vas ganando, jodío xDDD          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/176">4h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            Un <a href="/@scumah" class="user-permalink">@scumah</a> salvaje apareció, <a href="http://twittard.piradoiv.com/t/welcome" class="tag-permalink">#Welcome</a>!          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/175">4h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            RE <a href="/@Hopper" class="user-permalink">@Hopper</a>, correto!, gracias!          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/173">4h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            ¿Os está gustando el reto o es shit total? x'D          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/171">5h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            <a href="http://twittard.piradoiv.com/t/welcome" class="tag-permalink">#Welcome</a> <a href="/@blero" class="user-permalink">@blero</a>! =)          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/170">5h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            RE <a href="/@Nucklear" class="user-permalink">@Nucklear</a> por poco tiempo, BRRRRR          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/167">5h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            Bueeeenas <a href="/@txepox1" class="user-permalink">@txepox1</a> xD <a href="http://twittard.piradoiv.com/t/welcome" class="tag-permalink">#welcome</a>          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="grid-container tweet">
+      <div class="grid-10 mobile-grid-20 avatar">
+        <a href="http://twittard.piradoiv.com/@piradoiv"><img src="http://www.gravatar.com/avatar/9fd307c7dc3b9542585bb0a6a489e71d?s=50&d=retro" alt="" class="avatar-image" /></a>
+      </div>
+      <div class="grid-90 mobile-grid-80">
+        <div class="grid-50">
+          <h3 class="author">
+            Ricardo Cruz            <span class="username">
+              @<a href="http://twittard.piradoiv.com/@piradoiv">piradoiv</a>
+            </span>
+          </h3>
+        </div>
+        <div class="grid-50">
+          <p class="timespan">
+            <a href="http://twittard.piradoiv.com/@piradoiv/tweets/166">5h</a>
+          </p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid-100">
+          <p class="contents">
+            RE <a href="/@luthor" class="user-permalink">@luthor</a> ya habilitaremos las votaciones el domingo, no te preocupes :P          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</div>
+
+
+  <script src="http://twittard.piradoiv.com/javascripts/jquery.js"></script>
+  <script>
+    $('document').ready(function() {
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"),
+        {
+          lineNumbers: true,
+          theme: 'eclipse'
+        }
+      );
+    });
+  </script>
+</body>
+</html>

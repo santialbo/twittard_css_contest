@@ -1,0 +1,25 @@
+@import "variables.less";
+
+@btn-border-width: 3px;
+
+.btn {
+  padding: @btn-padding;
+  color: @btn-color;
+  display: inline-block;
+  background: none;
+  background-color: @main-color;
+  cursor: pointer;
+  font-size: @btn-font-size;
+  border-radius: @btn-border-radius;
+  border-style: solid;
+  border-width: 1px;
+  border-color: @btn-border-color;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="submit"] {
+  .btn();
+}
